@@ -7,6 +7,21 @@
     --spotify-green: rgba(30, 215, 96, 1);
     --spotify-black: rgba(25, 20, 20, 1);
     --alt-color: rgba(197, 192, 195, 0.32);
+    --glass-color: linear-gradient(
+        to right bottom, 
+        rgba(255, 255, 255, 0.8), 
+        rgba(255, 255, 255, 0.5)
+    );
+    --sidebar-color: linear-gradient(
+        to left top, 
+        rgba(255, 255, 255, 0.7), 
+        rgba(255, 255, 255, 0.25)
+    );
+    --card-color: linear-gradient(
+        to left top, 
+        rgba(255, 255, 255, 0.85), 
+        rgba(255, 255, 255, 0.5)
+    );
 
     /*============ FONT AND TYPOGRAPHY  ============*/
     --body-font: 'Poppins', sans-serif;
@@ -38,12 +53,20 @@ body {
     color: var(--spotify-black);
 }
 
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 ul {
     list-style: none;
 }
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 img {
@@ -56,4 +79,173 @@ img {
 .grid {
     display: grid;
     gap: 1.5rem;
+}
+
+.container {
+    max-width: 768px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+.section_header, 
+.section_title, 
+.section_subtitle {
+    text-align: center;
+}
+
+.section_header {
+    margin-top: 1rem;
+}
+
+.section_subtitle {
+    margin-bottom: 2rem;
+}
+
+.section {
+    flex: 2;
+}
+
+
+/*============ GLASS ============*/
+.glass {
+    background-image: var(--glass-color);
+    height: 90vh;
+    width: 70vw;
+    border-radius: 2rem;
+    display: flex;
+    z-index: 10000;
+    backdrop-filter: blur(1.2rem);
+}
+
+/*============ CIRCLES ============*/
+.circle1, 
+.circle2 {
+    background-color: var(--spotify-green);
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle1 {
+    top: 3%;
+    right: 5%;
+    height: 25rem;
+    width: 25rem;
+}
+
+.circle2 {
+    height: 20rem;
+    width: 20rem;
+    bottom: 1%;
+    left: 8%;
+}
+
+/*============ SIDEBAR  ============*/
+
+.side_bar {
+    background-image: var(--sidebar-color);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    text-align: center;
+}
+
+.side_list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem 2rem;
+    margin-top: 0.5rem;
+}
+
+.side_item {
+    font-size: var(--h3-font-size);
+}
+
+.user img {
+    max-width: 100%;
+    height: 7rem;
+    width: 7rem;
+}
+
+/*============ FAVOURITES  ============*/
+.favourites_container {
+    grid-template-columns: repeat(3, 1fr);
+    max-height: 25rem;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.favourites_container::-webkit-scrollbar {
+    display: none;
+}
+
+.fav_item {
+    text-align: center;
+}
+
+.fav_image {
+    max-width: 100%;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 1rem;
+}
+
+/*============ ALBUMS  ============*/
+.albums_container {
+    grid-template-columns: repeat(2, 1fr);
+    max-height: 60%;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin-top: 2rem; 
+}
+
+.albums_container::-webkit-scrollbar {
+    display: none;
+}
+
+.album_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.album_item {
+    text-align: center;
+}
+
+.album_image {
+    max-width: 100%;
+    height: 13rem;
+    width: 13rem;
+    border-radius: 1rem;
+}
+
+
+.album_filters {
+    display: flex;
+    justify-content: center;
+    column-gap: 0.5rem;
+}
+
+.album_filter {
+    background-color: var(--spotify-green);
+    padding: 0.3rem 0.6rem;
+    border-radius: 2rem;
+}
+
+.album_filter:hover {
+    background-color: rgb(18, 104, 18);
+    color: white;
+    cursor: pointer;
+}
+
+/*Active Item Album*/
+.active-album {
+    background-color: rgb(18, 104, 18);
+    color: white;
 }

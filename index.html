@@ -14,25 +14,155 @@
 
 </head>
 <body>
+    <main>
+        <!--============ GLASS ===========-->
+        <div class="wrapper">
+            <div class="glass">
+                <!--============ SIDE BAR ===========-->
+                <div class="side_bar">
+                    <div class="user">
+                        <img src="./assets/images/avatar.png" alt="avatar">
+                        <h2 class="user_name">Li Hui Cham</h2>
+                        <p class="user_status">Spotify Premium</p>
+                    </div>
 
-    <!--============ SIDE BAR ===========-->
+                    <ul class="side_list">
+                        <li class="side_item">
+                            <a href="#favourites" class="side_link">
+                                <i class='bx bx-heart side_icon'></i> Favourites 
+                            </a>
+                        </li>
 
-    <!--============ DASHBOARD ===========-->
+                        <li class="side_item">
+                            <a href="#albums" class="side_link">
+                                <i class='bx bx-library side_icon'></i> Albums
+                            </a>
+                        </li>
 
-    <!--============ FAVOURITES ===========-->
+                        <li class="side_item">
+                            <a href="#artists" class="side_link">
+                                <i class='bx bxs-star side_icon'></i> Artists 
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+<!-- 
+                <section class="favourites section" id="favourites">
+                    <div class="section_header">
+                        <h2 class="section_header">Favourites</h2>
+                        <p class="section_subtitle">My All-Time Favourites</p>
+                    </div>
 
-    <!--============ PLAYLISTS ===========-->
+                    <div class="favourites_container container grid">
+                        <a href="https://open.spotify.com/track/5vQM2VWIVRd7gmjnBE8Tpq?si=76a1029ec4db436a" class="fav_item" target="_blank">
+                            <img src="./assets/images/favourites/numb.PNG" alt="numb" class="fav_image">
+                            <p class="song_name">Numb by Jessi</p>
+                        </a>
 
-    <!--============ ARTISTS ===========-->
+                        <a href="https://open.spotify.com/track/5vQM2VWIVRd7gmjnBE8Tpq?si=76a1029ec4db436a" class="fav_item" target="_blank">
+                            <img src="./assets/images/favourites/numb.PNG" alt="numb" class="fav_image">
+                            <p class="song_name">Jessi</p>
+                        </a>
 
-    <!--============ GENRES ===========-->
+                        <a href="https://open.spotify.com/track/5vQM2VWIVRd7gmjnBE8Tpq?si=76a1029ec4db436a" class="fav_item" target="_blank">
+                            <img src="./assets/images/favourites/numb.PNG" alt="numb" class="fav_image">
+                            <p class="song_name">Jessi</p>
+                        </a>
+
+                        <a href="https://open.spotify.com/track/5vQM2VWIVRd7gmjnBE8Tpq?si=76a1029ec4db436a" class="fav_item" target="_blank">
+                            <img src="./assets/images/favourites/numb.PNG" alt="numb" class="fav_image">
+                            <p class="song_name">Jessi</p>
+                        </a>
+
+                        <a href="https://open.spotify.com/track/5vQM2VWIVRd7gmjnBE8Tpq?si=76a1029ec4db436a" class="fav_item" target="_blank">
+                            <img src="./assets/images/favourites/numb.PNG" alt="numb" class="fav_image">
+                            <p class="song_name">Jessi</p>
+                        </a>
+
+                        <a href="https://open.spotify.com/track/5vQM2VWIVRd7gmjnBE8Tpq?si=76a1029ec4db436a" class="fav_item" target="_blank">
+                            <img src="./assets/images/favourites/numb.PNG" alt="numb" class="fav_image">
+                            <p class="song_name">Jessi</p>
+                        </a>
+                        
+                        <a href="https://open.spotify.com/track/5vQM2VWIVRd7gmjnBE8Tpq?si=76a1029ec4db436a" class="fav_item" target="_blank">
+                            <img src="./assets/images/favourites/numb.PNG" alt="numb" class="fav_image">
+                            <p class="song_name">Jessi</p>
+                        </a>
+
+                    </div>
+                </section>
+                 -->
+
+                <section class="albums section" id="albums">
+                    <div class="section_header">
+                        <h2 class="section_header">Albums</h2>
+                        <p class="section_subtitle">Must-Listen Albums</p>
+                    </div>
+
+                    <div class="album_filters">
+                        <span class="album_filter active-album" data-filter="all">All</span>
+                        <span class="album_filter" data-filter=".pop">Pop</span>
+                        <span class="album_filter" data-filter=".kpop">K-pop</span>
+                        <span class="album_filter" data-filter=".chinese">Chinese</span>
+                    </div>
+
+                    <div class="albums_container container grid">
+                        <div class="album_card mix pop">
+                            <a href="https://open.spotify.com/album/2CIOGAByaHyjQ1EO55JSzC?si=33ed77f2f38b4e33" class="album_item" target="_blank">
+                                <img src="./assets/images/albums/=.PNG" alt="equals" class="album_image">
+                                <p class="song_name">Equals by Ed Sheeran</p>
+                            </a>
+                        </div>
+
+                        <div class="album_card mix kpop">
+                            <a href="https://open.spotify.com/album/59QELOU685J1AMB2paryAx?si=d5d3fcae296d4947" class="album_item" target="_blank">
+                                <img src="./assets/images/albums/blues.PNG" alt="blues" class="album_image">
+                                <p class="song_name">Blue;s by Mamamoo </p>
+                            </a>
+                        </div>
+
+                        <div class="album_card mix chinese">
+                            <a href="https://open.spotify.com/album/5BQmFN38iOhEhMVIdtvFhS?si=YzXdg3BNTkuTIKqs7RId6A" class="album_item" target="_blank">
+                                <img src="./assets/images/albums/motiandongwuyuan.PNG" alt="motiandongwuyuan" class="album_image">
+                                <p class="song_name">摩天动物园 by G.E.M. </p>
+                            </a>
+                        </div>
+
+                        <div class="album_card mix kpop">
+                            <a href="https://open.spotify.com/album/01dPJcwyht77brL4JQiR8R?si=kUxgtfJjQHCJLiD6N4AP3Q" class="album_item" target="_blank">
+                                <img src="./assets/images/albums/lilac.PNG" alt="lilac" class="album_image">
+                                <p class="song_name">LILAC by IU </p>
+                            </a>
+                        </div>
+
+                        <div class="album_card mix pop">
+                            <a href="https://open.spotify.com/album/5XCBX16KNYsAe7V5hQV9mC?si=7cL3xue1QWmU4cSjJkUpyg" class="album_item" target="_blank">
+                                <img src="./assets/images/albums/lovegoes.PNG" alt="lovegoes" class="album_image">
+                                <p class="song_name">Love Goes by Sam Smith </p>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!--============ CIRCLES ===========-->
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+    </main>
 
 
 
-    <!--============ MAIN JS ===========-->
-    <script src="main.js"></script>
+
+    </div>
+    
 
     <!--============ MIXITUP FILTER ===========-->
-    <script src="assets/mixitup/mixitup.min.js"></script>
+    <script src="./assets/mixitup/mixitup.min.js"></script>
+
+    <!--============ MAIN JS ===========-->
+    <!-- A NOTE FOR MYSELF: MAIN JS MUST BE LAST ! If not, other scripts will not be rendered !!!-->
+    <script src="./main.js"></script>
+
+
 </body>
 </html>
