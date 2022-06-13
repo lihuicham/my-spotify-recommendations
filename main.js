@@ -47,26 +47,26 @@ modalCloses.forEach((modalClose) => {
 })
 
 
-/*============ MIXITUP FILTER FOR ALBUMS ============*/
+/*============ MIXITUP FILTER FOR FAVOURITES ============*/
 
-let mixer = mixitup('.albums_container', {
+let mixer = mixitup('.favourites_container', {
     selectors: {
-        target: '.album_card'
+        target: '.fav_card'
     },
     animation: {
         duration: 300
     }
 });
 
-/* Active Link Album */
-const linkAlbum = document.querySelectorAll('.album_filter')
+/* Active Link Favourites */
+const linkFav = document.querySelectorAll('.fav_filter')
 
-function activeAlbum() {
-    linkAlbum.forEach(item => item.classList.remove('active-album'))
-    this.classList.add('active-album')
+function activeFav() {
+    linkFav.forEach(item => item.classList.remove('active-fav'))
+    this.classList.add('active-fav')
 }
 
-linkAlbum.forEach(item => item.addEventListener('click', activeAlbum))
+linkFav.forEach(item => item.addEventListener('click', activeFav))
 
 
 
