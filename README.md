@@ -64,6 +64,6 @@ Scaling (transformation), shadow and color-changing effects are added in ```elem
 
 <br>
 
-Note: Project is **best viewed using laptop/desktop screen** due to the size of the glass dashboard and cards. Mobile version of this webpage is not unavailable at the moment.  
+Note: Project is **best viewed using laptop/desktop screen** due to the size of the glass dashboard and cards. Mobile version of this webpage is unavailable at the moment.  
 
 **Click here to see my Spotify recommendations: [Project Demo](https://lihuicham.github.io/my-spotify-recommendations/)**
