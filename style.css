@@ -204,6 +204,7 @@ img {
     -ms-overflow-style: none;
     scrollbar-width: none;
     margin-top: 2rem;
+    padding: 0.3rem;
 }
 
 .favourites_container::-webkit-scrollbar {
@@ -245,6 +246,14 @@ img {
     align-items: center;
 }
 
+.fav_card:hover {
+    transform: scale(1.03);
+}
+
+.fav_image:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
 /*Active Item Favourites*/
 .active-fav {
     background-color: rgb(18, 104, 18);
@@ -260,16 +269,25 @@ img {
     -ms-overflow-style: none;
     scrollbar-width: none;
     margin-top: 2rem; 
+    padding: 0.3rem;
 }
 
 .albums_container::-webkit-scrollbar {
     display: none;
 }
 
+.album_image:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
 .album_card {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.album_card:hover {
+    transform: scale(1.03);
 }
 
 .album_item {
