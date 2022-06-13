@@ -26,28 +26,22 @@
                         <p class="user_status">Spotify Premium</p>
                     </div>
 
-                    <ul class="side_list">
-                        <li class="side_item">
-                            <a href="#favourites" class="side_link">
-                                <i class='bx bx-heart side_icon'></i> Favourites 
-                            </a>
-                        </li>
+                    <div class="side_list">
+                        <div class="side_item active-section" data-target="#favourites">
+                            <i class='bx bx-heart side_icon'></i> Favourites 
+                        </div>
 
-                        <li class="side_item">
-                            <a href="#albums" class="side_link">
-                                <i class='bx bx-library side_icon'></i> Albums
-                            </a>
-                        </li>
+                        <div class="side_item" data-target="#albums">
+                            <i class='bx bx-library side_icon'></i> Albums
+                        </div>
 
-                        <li class="side_item">
-                            <a href="#artists" class="side_link">
-                                <i class='bx bxs-star side_icon'></i> Artists 
-                            </a>
-                        </li>
-                    </ul>
+                        <div class="side_item" data-target="#artists">
+                            <i class='bx bxs-star side_icon'></i> Artists 
+                        </div>
+                    </div>
                 </div>
-<!-- 
-                <section class="favourites section" id="favourites">
+                <!-- ============ FAVOURITES ============ -->
+                <section class="favourites section nav_section active-section" data-content id="favourites">
                     <div class="section_header">
                         <h2 class="section_header">Favourites</h2>
                         <p class="section_subtitle">My All-Time Favourites</p>
@@ -91,9 +85,9 @@
 
                     </div>
                 </section>
-                 -->
-
-                <section class="albums section" id="albums">
+                
+                <!-- ============ ALBUMS ============ -->
+                <section class="albums section nav_section" data-content id="albums">
                     <div class="section_header">
                         <h2 class="section_header">Albums</h2>
                         <p class="section_subtitle">Must-Listen Albums</p>
@@ -140,6 +134,133 @@
                                 <img src="./assets/images/albums/lovegoes.PNG" alt="lovegoes" class="album_image">
                                 <p class="song_name">Love Goes by Sam Smith </p>
                             </a>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- ============ ARTISTS ============ -->
+                <section class="artists section nav_section" data-content id="artists">
+                    <div class="section_header">
+                        <h2 class="section_header">Artists</h2>
+                        <p class="section_subtitle">My Favourite Artists</p>
+                    </div>
+
+                    <div class="artists_container container grid">
+                        <!-- ============ ARTIST 1 ============ -->
+                        <div class="artist_card">
+                            <img src="./assets/images/artists/iu.jpeg" alt="iu" class="artist_image">
+                            <h3 class="artist_name">IU (아이유) </h3>
+                            <p class="artist_status">South-Korean singer-songwriter, record producer and actress</p>
+                        </div>
+
+                        <div class="artist_modal grid ">
+                            <i class='bx bx-x artist_modal-cross'></i>
+                            <img src="./assets/images/modal/iu-modal.jpg" alt="iu-modal" class="artist_modal-img">
+                            
+
+                            <div class="artist_modal-explain">
+                                <h3 class="artist_modal-header">IU (아이유)</h3>
+    
+                                <ul class="artist_modal-content grid">
+                                    <li class="artist_modal-info">
+                                        <i class='bx bx-star artist_modal-star'></i>
+                                        <p>Donec semper nulla nec ipsum blandit gravida accumsan et erat.</p>
+                                    </li>
+    
+                                    <li class="artist_modal-info">
+                                        <i class='bx bx-star artist_modal-star'></i>
+                                        <p>Aenean maximus enim in egestas tempor.</p>
+                                    </li>
+    
+                                    <li class="artist_modal-info">
+                                        <i class='bx bx-star artist_modal-star'></i>
+                                        <p>Praesent volutpat elit vitae felis faucibus, in congue purus mollis..</p>
+                                    </li>
+    
+                                    <li class="artist_modal-info">
+                                        <i class='bx bx-star artist_modal-star'></i>
+                                        <p>Integer vehicula lectus ac tortor egestas, et elementum lacus rutrum.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+  
+                        <!-- ============ ARTIST 2 ============ -->
+                        <div class="artist_card">
+                            <img src="./assets/images/artists/iu.jpeg" alt="iu" class="artist_image">
+                            <h3 class="artist_name">IU (아이유) </h3>
+                            <p class="artist_status">South-Korean singer-songwriter, record producer and actress</p>
+                        </div>
+
+                        <div class="artist_modal grid ">
+                            <i class='bx bx-x artist_modal-cross'></i>
+                            <img src="./assets/images/modal/iu-modal.jpg" alt="iu-modal" class="artist_modal-img">
+                            
+
+                            <div class="artist_modal-explain">
+                                <h3 class="artist_modal-header">IU (아이유)</h3>
+    
+                                <ul class="artist_modal-content grid">
+                                    <li class="artist_modal-info">
+                                        <i class='bx bx-star artist_modal-star'></i>
+                                        <p>Donec semper nulla nec ipsum blandit gravida accumsan et erat.</p>
+                                    </li>
+    
+                                    <li class="artist_modal-info">
+                                        <i class='bx bx-star artist_modal-star'></i>
+                                        <p>Aenean maximus enim in egestas tempor.</p>
+                                    </li>
+    
+                                    <li class="artist_modal-info">
+                                        <i class='bx bx-star artist_modal-star'></i>
+                                        <p>Praesent volutpat elit vitae felis faucibus, in congue purus mollis..</p>
+                                    </li>
+    
+                                    <li class="artist_modal-info">
+                                        <i class='bx bx-star artist_modal-star'></i>
+                                        <p>Integer vehicula lectus ac tortor egestas, et elementum lacus rutrum.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- ============ ARTIST 3 ============ -->
+                        <div class="artist_card">
+                            <img src="./assets/images/artists/iu.jpeg" alt="iu" class="artist_image">
+                            <h3 class="artist_name">IU (아이유) </h3>
+                            <p class="artist_status">South-Korean singer-songwriter, record producer and actress</p>
+                        </div>
+
+                        <div class="artist_modal grid ">
+                            <i class='bx bx-x artist_modal-cross'></i>
+                            <img src="./assets/images/modal/iu-modal.jpg" alt="iu-modal" class="artist_modal-img">
+                            
+
+                            <div class="artist_modal-explain">
+                                <h3 class="artist_modal-header">IU (아이유)</h3>
+    
+                                <ul class="artist_modal-content grid">
+                                    <li class="artist_modal-info">
+                                        <i class='bx bx-star artist_modal-star'></i>
+                                        <p>Donec semper nulla nec ipsum blandit gravida accumsan et erat.</p>
+                                    </li>
+    
+                                    <li class="artist_modal-info">
+                                        <i class='bx bx-star artist_modal-star'></i>
+                                        <p>Aenean maximus enim in egestas tempor.</p>
+                                    </li>
+    
+                                    <li class="artist_modal-info">
+                                        <i class='bx bx-star artist_modal-star'></i>
+                                        <p>Praesent volutpat elit vitae felis faucibus, in congue purus mollis..</p>
+                                    </li>
+    
+                                    <li class="artist_modal-info">
+                                        <i class='bx bx-star artist_modal-star'></i>
+                                        <p>Integer vehicula lectus ac tortor egestas, et elementum lacus rutrum.</p>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </section>
