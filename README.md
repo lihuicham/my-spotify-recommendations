@@ -45,7 +45,8 @@ To use MixItUp 3 or read the documentation, visit [KunkaLabs website](https://ww
 Visit [project page](https://lihuicham.github.io/my-spotify-recommendations/) to try out the MixItUp filter in the Favourites section !  
 
 ### Glass Cards with Shadow (CSS Property)
-The project uses the ```box-shadow``` property in CSS to achieve a pop-up feeling for the cards, that are of glassmorphism designed too. 
+The project uses the ```box-shadow``` property in CSS to achieve a pop-up feeling for the cards, that are of glassmorphism designed too.  
+
 ![artists](./assets/images/project_preview/artists.PNG)
 
 
@@ -62,8 +63,7 @@ backdrop-filter: blur(1.2rem);
 Scaling (transformation), shadow and color-changing effects are added in ```element:hover``` property for responsiveness. 
 
 <br>
-Note: Project is **best viewed using laptop/desktop screen** due to the size of the glass dashboard and cards. Mobile version of this webpage is not unavailable at the moment. 
 
-<br>
+Note: Project is **best viewed using laptop/desktop screen** due to the size of the glass dashboard and cards. Mobile version of this webpage is not unavailable at the moment.  
 
 **Click here to see my Spotify recommendations: [Project Demo](https://lihuicham.github.io/my-spotify-recommendations/)**
