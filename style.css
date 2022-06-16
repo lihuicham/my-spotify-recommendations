@@ -86,7 +86,7 @@ img {
 }
 
 .container {
-    max-width: 768px;
+    max-width: 900px;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
   }
@@ -328,7 +328,7 @@ img {
     -ms-overflow-style: none;
     scrollbar-width: none;
     margin-top: 2rem; 
-    margin-left: 5rem;
+    margin-left: 8.5rem;
 }
 
 .artists_container::-webkit-scrollbar {
@@ -465,4 +465,72 @@ img {
 
 .side_item.active-section {
     color: var(--spotify-green);
+}
+
+/*============ MEDIA QUERIES ============*/
+/* @media screen and (min-width: 1420px) {
+    body {
+        zoom: 1.7;
+    }
+} */
+
+@media screen and (min-width: 1860px) {
+    .container {
+        max-width: 1500px;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+      }
+
+    .favourites_container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .fav_image {
+        height: 15rem;
+        width: 15rem;
+    }
+
+    .albums_container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .artist_image {
+        height: 15rem;
+        width: 15rem;
+    }
+
+    .artists_container {
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 5rem;
+    }
+
+    .artist_card {
+        height: 25rem;
+        width: 18rem;
+    }
+
+    .artist_modal {
+        top: 15%;
+        left: 20%;
+        right: 10%;
+        bottom: 10%;
+        height: 75%;
+        width: 75%;
+    }
+
+    .artist_modal-img {
+        width: 20rem;
+        height: 25rem;
+        border-radius: 1rem;
+        margin-left: 2rem;
+    }
+
+    .artist_modal-header {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .artist_modal-info {
+        font-size: 1.3rem;
+    }
 }
